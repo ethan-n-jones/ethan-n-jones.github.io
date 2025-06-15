@@ -27,12 +27,9 @@ navLinks.addEventListener('click', (e) => {
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        const target = document.querySelector(href);
-
-        // Only prevent default if target exists
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -40,7 +37,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 
 // Fade in animation on scroll
 const observerOptions = {
