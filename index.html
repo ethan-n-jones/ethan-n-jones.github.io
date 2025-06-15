@@ -775,31 +775,26 @@
                 <h2 class="section-title fade-in">About Me</h2>
                 <div class="about-content">
                     <div class="about-text fade-in">
-                        <p>I'm a passionate full-stack developer with 3+ years of experience building scalable web applications. I love turning complex ideas into elegant, user-friendly solutions.</p>
-                        <p>When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community. I believe in writing clean, maintainable code and following best practices.</p>
-                        <p>Currently focused on modern web technologies and always excited to learn new frameworks and tools that can improve user experiences.</p>
+                        <p>I'm a passionate full-stack developer. I love turning complex ideas into elegant, user-friendly solutions.</p>
+                        <p>When I'm not coding, you'll find me exploring new technologies and sharing knowledge with the developer community. I believe in writing clean, maintainable code and following best practices.</p>
+                        <p>I am currently focused on modern web technologies and always excited to learn new frameworks and tools that can improve user experiences.</p>
                         <div class="skills">
                             <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
                             <span class="skill-tag">Blazor</span>
                             <span class="skill-tag">Java</span>
                             <span class="skill-tag">C#</span>
                             <span class="skill-tag">C++</span>
                             <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Azure</span>
                         </div>
                     </div>
                     <div class="about-image fade-in">
                         <div class="code-block">
                             <div class="code-line"><span class="keyword">const</span> developer = {</div>
                             <div class="code-line">  name: <span class="string">'Ethan Jones'</span>,</div>
-                            <div class="code-line">  location: <span class="string">'Ohio, US'</span>,</div>
-                            <div class="code-line">  passion: <span class="string">'full-stack development'</span>,</div>
-                            <div class="code-line">  skills: [<span class="string">'JavaScript'</span>, <span class="string">'React'</span>, <span class="string">'Node.js'</span>],</div>
-                            <div class="code-line">  coffee: <span class="keyword">true</span>,</div>
+                            <div class="code-line">  location: <span class="string">'Cleveland, OH'</span>,</div>
+                            <div class="code-line">  passion: <span class="string">'Full-stack Development'</span>,</div>
                             <div class="code-line">  <span class="comment">// Always learning</span></div>
                             <div class="code-line">  learning: <span class="string">'never stops'</span>,</div>
-                            <div class="code-line">  available: <span class="keyword">true</span></div>
                             <div class="code-line">};</div>
                         </div>
                     </div>
@@ -818,6 +813,13 @@
                             <p>Pursuing a Bachelor's degree in Software Engineering.</p>
                         </div>
                     </div>
+                    <div class="timeline-item left fade-in">
+                        <div class="timeline-content">
+                            <h3>IT Software Development Intern</h3>
+                            <div class="date">2025</div>
+                            <p>ADD IN A DESCRIPTION OF THIS INTERN.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -827,14 +829,11 @@
                 <h2 class="section-title fade-in">Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card fade-in">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-featured e-commerce solution with user authentication, payment processing, and admin dashboard. Built with modern web technologies for optimal performance and scalability.</p>
+                        <h3>ADD MY OWN PROJECT</h3>
+                        <p>ADD PROJECT DESCRIPTION</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Stripe</span>
-                            <span class="tech-tag">JWT</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">Live Demo</a>
@@ -949,31 +948,6 @@
             } else {
                 scrollTop.classList.remove('visible');
             }
-        });
-
-        // Contact form handling
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            // Create mailto link
-            const mailtoLink = `mailto:ethanjones1203@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            alert('Email client opened! Thank you for reaching out.');
-            
-            // Reset form
-            contactForm.reset();
         });
 
         // Enhanced project card interactions
