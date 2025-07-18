@@ -352,6 +352,9 @@ nav {
     position: relative;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .timeline-content h3 {
@@ -530,8 +533,8 @@ nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap;
     padding-top: 10px;
+    flex-wrap: wrap;
 }
 
 .contact-link {
